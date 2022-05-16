@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroZod</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <h1>AstroZod</h1>
+    <nav>
+      <a href="/">Home</a>
+      <!-- If the user is logged in, show a logout button -->
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">Logout</button>
+      {{else}}
+      <!-- Otherwise, show a link to login -->
+      <a href="/login">Login/Signup</a>
+      {{/if}}
+    </nav>
+  </header>
+  <main>
+    <div class="horoscope">
+      {{{body}}}
+    </div>
+  </main>
+  <!-- If the user is logged in, load the JS script for when they logout -->
+  {{#if loggedIn}}
+  <script src="/assets/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

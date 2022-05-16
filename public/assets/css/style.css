@@ -1,0 +1,336 @@
+:root {
+    --primary: #3d5852;
+    --secondary: #86938f;
+    --tertiary: #5e877f;
+    --quatrinary: #6c6b67;
+    --light: #e3e4e3;
+    --dark: #182c23;
+    --error: rgb(228, 0, 00);
+    --border-radius: 0.3rem;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--quatrinary);
+  }
+  
+  a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background: var(--primary);
+    color: var(--light);
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  aside {
+    flex: 0;
+    background-color: var(--tertiary);
+    padding: 80px;
+    text-align: left;
+    color: var(--light);
+  }
+  
+  nav {
+    display: flex;
+    background-color: var(--secondary);
+  }
+  
+  nav a {
+    color: var(--light);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    color: var(--secondary);
+    background-color: var(--dark);
+  }
+  
+  .horoscope {
+    flex: 4;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    transition: color 0.1s;
+    margin-left: 16px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  /* CARDS */
+  .card {
+    margin: 20px;
+    flex: 0 1 300px;
+    border: 7px double var(--dark);
+    border-radius: 10px;
+    background-color: var(--light);
+    color: var(--dark);
+  }
+  
+  .login-card {
+    margin: 0 0 20px 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+    border-style: double;
+    border-width: thick;
+    background-color: #577a7c;
+    color: var(--light);
+  }
+  
+  .card header {
+    color: var(--light);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: var(--tertiary);
+    padding: 0.625rem;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  }
+  
+  .card-body {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .horoscope-name {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px var(--secondary);
+    border: 10px groove var(--light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  
+  /* LAYOUT */
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: center;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+  }
+  
+  header h1 {
+    font-size: 1em;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+  }
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+  
+  .btn-no-style:hover {
+    background: none;
+    color: #3486eb;
+  }
+  
+  .delete-post-btn {
+    background-color: #d41414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
+  }
+  
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  
+  .upvote-btn {
+    background-color: #197d0f;
+    transition: background-color .1s;
+  }
+  
+  .upvote-btn:hover {
+    background-color: #1f9c13;
+  }
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: #fff5eb;
+  }
+  
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  
+  .new-post-form input {
+    width: 300px;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
+
+  #main-title {
+    text-align: center;
+    color: rgb(43, 42, 43);
+  }
+
+  #post-section {
+    text-align: center;
+  }
+
+  .share-prediction {
+    border-style: dashed;
+    background-color: rgba(218, 108, 187, 0.459);
+    border-color:peachpuff;
+
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .comment-block {
+    padding: 5px;
+    background-color:rgba(157, 170, 190, 0.608);
+    border-style: solid;
+    border-color:rgb(205, 173, 173);
+    text-align: left;
+    margin: 5px;
+  }
+
+  .horoscope {
+    background-color: rgb(236, 225, 129);
+  }
+
+  main {
+    background-color: rgb(235, 155, 155);
+  }
+
+  .login-form {
+    margin: 10px;
+    margin-right: 80px;
+    border-style: solid;
+    padding: 10px;
+    background-color: rgba(166, 202, 204, 0.654);
+  }
+
+  .signup-form {
+    margin: 10px;
+    border-style: solid;
+    padding: 10px;
+    background-color: rgb(181, 207, 216);
+  }
+
+  .user-info {
+    font: normal;
+    border: rgb(166, 203, 222);
+    background-color: darkseagreen;
+    margin-top: 20px;
+  }
+
+  .user-prediction {
+    font: normal;
+    background-color: rgb(165, 196, 206);
+
+  }

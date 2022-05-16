@@ -1,0 +1,40 @@
+<aside>
+  <h2>Enjoy the horoscopes!</h2>
+</aside>
+<section>
+  <div class="user-info">
+    <h4 id="user-sign">Sign: {{prediction.userSign}}</h4>
+    <h4 id="user-animal-sign">Animal Sign:{{prediction.userAnimalSign}}</h4>
+  </div>
+  <div class="user-prediction">
+    <h3>Your Prediction:</h3>
+    <div id="today">
+      <h3>Today: </h3><p id="today-prediction">{{prediction.today}}</p>
+      <button type="submit" id="today-button" class="share-button">Share this Prediction</button>
+    </div>
+
+    <div id="tomorrow">
+      <h3>Tomorrow: </h3><p id="tomorrow-prediction">{{prediction.tomorrow}}</p>
+      <button type="submit" id="tomorrow-button" class="share-button">Share this Prediction</button>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/javascript/dashboard.js"></script>
+
+
+{{!-- {{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script> --}}
