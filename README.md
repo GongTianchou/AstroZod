@@ -19,8 +19,6 @@
 
  * In 2022, the especially younger generations of the world surrounds themselves with different types of Astrology as the basis for finding compatibility for partners, horoscopes to determine fate and in a more classical sense find a chinese zodiac. 
  * This Technology provides all of that by signing up and logging into the page with blog like features that can be used by commenting on different things that are posted. The user can adequately find where he will be in the future. The project was for creating a lens for the future. 
- * There were challenges involved working with a new technology tailwindcss and considering the package was not loading the contents into the handlebars. Other obstacles involved meeting with everyone at a time that worked for each member. Github resoliving issues were another problem that created some issues. 
- * The group managed to make a presentation for the group however the styling was not working with Tailwind so we were without a beautiful front-end however the back-end was working as desired. 
  * Success involved in learning new packages and utilizing API routes for Servers
 
 # Table of contents
