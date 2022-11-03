@@ -32,7 +32,6 @@
 * Javascript
 * Css
 * Handlebars
-* TailwindCSS(At first)
 * MySql
 * Sequilize ORM
 * Express
